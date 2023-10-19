@@ -1,40 +1,42 @@
-class ArtículoCientífico {
-    private String título;
+class ArticuloCientifico {
+    private String nombre;
     private String autor;
-    private String palabrasClave;
-    private String nombrePublicación;
-    private int año;
+    private String palabrasClaves;
+    private String nombrePublicacion;
+    private int anio;
     private String resumen;
 
     // Constructor 1
-    public ArtículoCientífico(String título, String autor) {
-        this.título = título;
+    public ArticuloCientifico(String nombre, String autor) {
+        this.nombre = nombre;
         this.autor = autor;
     }
 
     // Constructor 2
-    public ArtículoCientífico(String título, String autor, String palabrasClave, String nombrePublicación, int año) {
-        this(título, autor);
-        this.palabrasClave = palabrasClave;
-        this.nombrePublicación = nombrePublicación;
-        this.año = año;
+    public ArticuloCientifico(String nombre, String autor, String palabrasClaves, String nombrePublicacion, int anio) {
+        this(nombre, autor);
+        this.palabrasClaves = palabrasClaves;
+        this.nombrePublicacion = nombrePublicacion;
+        this.anio = anio;
     }
 
     // Constructor 3
-    public ArtículoCientífico(String título, String autor, String palabrasClave, String nombrePublicación, int año, String resumen) {
-        this(título, autor, palabrasClave, nombrePublicación, año);
+    public ArticuloCientifico(String nombre, String autor, String palabrasClaves, String nombrePublicacion, int anio, String resumen) {
+        this(nombre, autor, palabrasClaves, nombrePublicacion, anio);
         this.resumen = resumen;
     }
 
-    public void imprimir() {
-        System.out.println("Título: " + título);
+    // Método para imprimir los atributos del artículo
+    public void imprimirArticulo() {
+        System.out.println("Nombre del artículo: " + nombre);
         System.out.println("Autor: " + autor);
-        System.out.println("Palabras Clave: " + palabrasClave);
-        System.out.println("Nombre de la Publicación: " + nombrePublicación);
-        System.out.println("Año: " + año);
+        System.out.println("Palabras Claves: " + palabrasClaves);
+        System.out.println("Nombre de la Publicación: " + nombrePublicacion);
+        System.out.println("Año: " + anio);
         System.out.println("Resumen: " + resumen);
     }
 }
+
 
 class Empleado {
     private int identificador;
